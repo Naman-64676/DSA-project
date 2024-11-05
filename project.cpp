@@ -4,7 +4,7 @@
 #define MAX_NAME_LENGTH 50
 #define MAX_STUDENTS 100
 
-// Define a struct for storing student information
+
 struct Student {
     int id;
     char name[MAX_NAME_LENGTH];
@@ -12,7 +12,7 @@ struct Student {
     float grade;
 };
 
-// Function to display student information
+
 void displayStudent(struct Student s) {
     printf("ID: %d\n", s.id);
     printf("Name: %s\n", s.name);
@@ -34,7 +34,7 @@ int main() {
         scanf("%d", &students[i].id);
 
         printf("Name: ");
-        scanf(" %[^\n]s", students[i].name);  // Take input including spaces
+        scanf(" %[^\n]s", students[i].name);  
 
         printf("Age: ");
         scanf("%d", &students[i].age);
